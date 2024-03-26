@@ -43,7 +43,7 @@ const updateCustomer = (req, resp) => {
     }
   )
     .then((result) => {
-      if (result.nModified > 0) {
+      if (result.modifiedCount > 0) {
         resp
           .status(201)
           .json({ status: true, message: 'customer was Updated!' });
